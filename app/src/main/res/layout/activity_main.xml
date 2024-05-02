@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:gravity="center"
+    >
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:foregroundGravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginStart="10sp"
+        />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignEnd="@+id/confirm_label"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13sp"
+        android:text="Enter Name: "
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/confirm"
+        android:layout_alignEnd="@+id/confirm"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/name_label"
+        android:background="@color/white"
+        android:hint="Enter user here"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_label"
+        android:layout_alignEnd="@+id/confirm_label"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter Email ID: "
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/name_label"
+        android:layout_alignEnd="@+id/confirm"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/confirm_label"
+        android:layout_toRightOf="@id/email_label"
+        android:background="@color/white"
+        android:hint="Enter Email ID here"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_label"
+        android:layout_alignEnd="@+id/confirm_label"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter Username: "
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/email_label"
+        android:layout_alignEnd="@+id/confirm"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/confirm_label"
+        android:layout_toRightOf="@id/username_label"
+        android:background="@color/white"
+        android:hint="Enter username here"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_label"
+        android:layout_alignEnd="@+id/username_label"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Enter Password: "
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/username_label"
+        android:layout_alignStart="@+id/confirm"
+        android:layout_alignEnd="@+id/confirm"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/password_label"
+        android:background="@color/white"
+        android:hint="Enter password here"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/confirm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_label"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter Confirm Password: "
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/confirm"
+        android:layout_width="168dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/password_label"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@id/confirm_label"
+        android:background="@color/white"
+        android:hint="Enter password here"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/confirm_label"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/confirm_label"
+        android:backgroundTint="@color/white"
+        android:text="Clear Form"
+        android:textColor="@color/orange"
+        android:textSize="8dp"
+        android:layout_marginRight="4dp"/>
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Create Account"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/confirm_label"
+        android:layout_toRightOf="@id/clear_button"
+        android:layout_marginTop="20dp"
+        android:textSize="8dp"
+        />
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:foregroundGravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/clear_button"
+        />
+</RelativeLayout>
